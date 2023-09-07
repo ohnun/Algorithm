@@ -1,9 +1,10 @@
 # You can choose 'clang' or 'gcc'.
 # CC = clang
-CC = gcc
+# CC = gcc
+CC = g++
 
-main: main.c
-	$(CC) main.c -Wall -o main -g -lm
+main: main.cpp
+	$(CC) main.cpp -Wall -o main -g -lm
 
 .PHONY: clear
 # clean main.c and delete main exe.
