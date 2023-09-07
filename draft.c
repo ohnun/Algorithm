@@ -19,7 +19,7 @@ int main(){
     fprintf(fp, "using std::string;\n\n");
     // body.
     fprintf(fp, "int main(){\n");
-    fprintf(fp, "\treturn 0;\n");
+    fprintf(fp, "\n\treturn 0;\n");
     fprintf(fp, "}\n");
 
     if(fclose(fp) != 0){
