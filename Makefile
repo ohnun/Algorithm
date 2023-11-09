@@ -6,9 +6,9 @@ CC = g++
 main: main.cpp
 	$(CC) main.cpp -Wall -o main -g -lm
 
-.PHONY: clear
+.PHONY: clean
 # clean main.c and delete main exe.
-clear:
+clean:
 	$(CC) draft.c -o draft && ./draft
 	rm draft main
 	clear
