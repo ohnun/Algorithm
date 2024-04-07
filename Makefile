@@ -2,9 +2,10 @@
 # CC = clang
 # CC = gcc
 CC = g++
+ADD_FILE = ./src/*.cpp
 
 main: main.cpp
-	$(CC) main.cpp -Wall -o main -g -lm
+	$(CC) main.cpp $(ADD_FILE) -Wall -o main -g -lm
 
 .PHONY: clean
 # clean main.c and delete main exe.
