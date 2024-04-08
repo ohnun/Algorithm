@@ -17,4 +17,7 @@ vector<int> selectionSort(vector<int> arr);
 // Return sorted array using bubble sort. 
 vector<int> bubbleSort(vector<int> arr);
 
+// Return sorted array using insert sort. 
+vector<int> insertSort(vector<int> arr);
+
 #endif

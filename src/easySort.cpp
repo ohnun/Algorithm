@@ -61,3 +61,20 @@ vector<int> bubbleSort(vector<int> arr){
 
 	return arr;
 }
+
+// Return sorted array using insert sort. 
+vector<int> insertSort(vector<int> arr){
+	if(arr.size() < 2){
+		return arr;
+	}
+
+	for(int i = 1; i < (int)arr.size(); ++i){
+		for(int j = i; j > 0; --j){
+			if(arr[j - 1] > arr[j]){
+				arr = swap(arr, j - 1, j);
+			}
+		}
+	}
+
+	return arr;
+}
