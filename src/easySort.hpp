@@ -14,4 +14,7 @@ using std::vector;
 // Return sorted array using selection sort. 
 vector<int> selectionSort(vector<int> arr);
 
+// Return sorted array using bubble sort. 
+vector<int> bubbleSort(vector<int> arr);
+
 #endif
