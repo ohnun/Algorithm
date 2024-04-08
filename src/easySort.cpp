@@ -70,8 +70,15 @@ vector<int> insertSort(vector<int> arr){
 
 	for(int i = 1; i < (int)arr.size(); ++i){
 		for(int j = i; j > 0; --j){
+			/*
+			* The condition for stopping is 
+			* until the previous value is smaller than the value to be inserted, 
+			* or the leftmost end is reached.
+			*/
 			if(arr[j - 1] > arr[j]){
 				arr = swap(arr, j - 1, j);
+			}else{
+				break;
 			}
 		}
 	}
