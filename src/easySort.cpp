@@ -51,9 +51,9 @@ vector<int> bubbleSort(vector<int> arr){
 		return arr;
 	}
 
-	for(int i = 0; i < (int)arr.size() - 1; ++i){
-		for(int j = i + 1; j < (int)arr.size(); ++j){
-			if(arr[j] < arr[i]){
+	for(int i = arr.size() - 1; i > 0; --i){
+		for(int j = 0; j < i; ++j){
+			if(arr[j] > arr[i]){
 				arr = swap(arr, i, j);
 			}
 		}
