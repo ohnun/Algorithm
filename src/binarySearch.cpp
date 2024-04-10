@@ -12,9 +12,14 @@ using std::vector;
 bool binarySearch(vector<int> arr, int key){
 	int lIndex = 0;
 	int rIndex = arr.size() - 1;
-	int middle = (lIndex + rIndex) >> 1;
+
+	if(arr.size() == 0){
+		return false;
+	}
 	
-	while(lIndex < rIndex){
+	while(lIndex <= rIndex){
+		int middle = (lIndex + rIndex) >> 1;
+
 		if(arr[middle] == key){
 			return true;
 		}
@@ -24,8 +29,30 @@ bool binarySearch(vector<int> arr, int key){
 		}else{
 			rIndex = middle - 1;
 		}
-		middle = (lIndex + rIndex) >> 1;
 	}
 
 	return false;
+}
+
+int findLeft(vector<int> arr, int key){
+	int lIndex = 0;
+	int rIndex = arr.size() - 1;
+	int ans = -1;
+
+	if(arr.size() == 0){
+		return ans;
+	}
+
+	while(lIndex <= rIndex){
+		int middle = (lIndex + rIndex) >> 1;
+
+		if(arr[middle] >= key){
+			ans = middle;
+			rIndex = middle - 1;
+		}else{
+			lIndex = middle + 1;
+		}
+	}
+
+	return ans;
 }
