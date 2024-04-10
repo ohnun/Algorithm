@@ -12,11 +12,19 @@ using std::vector;
 bool binarySearch(vector<int> arr, int key);
 
 /*
-* Return the position whose value is 
+* Return the left position whose value is 
 * greater than or equal to (>=) key
 * in the sorted arr; 
 * otherwise, return -1. 
 */
 int findLeft(vector<int> arr, int key);
+
+/*
+* Return the right position whose value is 
+* less than or equal to (<=) key
+* in the sorted arr; 
+* otherwise, return -1. 
+*/
+int findRight(vector<int> arr, int key);
 
 #endif
