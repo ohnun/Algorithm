@@ -1,5 +1,5 @@
 #include <vector>
-#include "src/binarySearch.hpp"
+#include "binarySearch.hpp"
 using std::vector;
 
 /*
