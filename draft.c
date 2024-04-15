@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-int main(int argv, char **argc){
+int main(int argc, char **argv){
     // Change "main.c" to "main.cpp"
     FILE *fp = fopen("main.cpp", "w");
 
