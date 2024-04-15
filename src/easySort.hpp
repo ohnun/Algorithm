@@ -2,22 +2,14 @@
 #define _EASY_SORT_H
 
 #include <vector>
-using std::vector;
-
-/*
-* Three simple sorting algorithms. 
-* @version: 0.01
-* @date: 2024-4-8
-* @author: John Sun
-*/
 
 // Return sorted array using selection sort. 
-vector<int> selectionSort(vector<int> arr);
+std::vector<int> selectionSort(std::vector<int> arr);
 
 // Return sorted array using bubble sort. 
-vector<int> bubbleSort(vector<int> arr);
+std::vector<int> bubbleSort(std::vector<int> arr);
 
 // Return sorted array using insert sort. 
-vector<int> insertSort(vector<int> arr);
+std::vector<int> insertSort(std::vector<int> arr);
 
 #endif

@@ -3,11 +3,11 @@
 using std::vector;
 
 /*
-* Binary search. 
-* @version: 0.01
-* @date: 2024-4-10
-* @author: John Sun
-*/
+ * Binary search. 
+ * @version: 0.01
+ * @date: 2024-4-10
+ * @author: John Sun
+ */
 
 bool binarySearch(vector<int> arr, int key){
 	int lIndex = 0;

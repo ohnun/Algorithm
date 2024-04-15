@@ -7,11 +7,11 @@ using std::endl;
 using std::vector;
 
 /*
-* Three simple sorting algorithms. 
-* @version: 0.01
-* @date: 2024-4-8
-* @author: John Sun
-*/
+ * Three simple sorting algorithms. 
+ * @version: 0.01
+ * @date: 2024-4-8
+ * @author: John Sun
+ */
 
 // Swap elements of array. 
 vector<int> swap(vector<int> arr, int i, int j){
@@ -29,9 +29,9 @@ vector<int> selectionSort(vector<int> arr){
 	}
 
 	/*
-	* Find the smallest number among i~arr.size(), 
-	* and then exchange it with arr[i]. 
-	*/
+	 * Find the smallest number among i~arr.size(), 
+	 * and then exchange it with arr[i]. 
+	 */
 	for(int i = 0; i < (int)arr.size() - 1; ++i){
 		int minIndex = i;
 		for(int j = i; j < (int)arr.size(); ++j){
@@ -70,10 +70,10 @@ vector<int> insertSort(vector<int> arr){
 
 	for(int i = 1; i < (int)arr.size(); ++i){
 		/*
-		* The condition for stopping is 
-		* until the previous value is smaller than the value to be inserted, 
-		* or the leftmost end is reached.
-		*/
+		 * The condition for stopping is 
+		 * until the previous value is smaller than the value to be inserted, 
+		 * or the leftmost end is reached.
+		 */
 		for(int j = i; j > 0 && arr[j - 1] > arr[j]; --j){
 			arr = swap(arr, j - 1, j);
 		}
