@@ -24,7 +24,7 @@ git clone https://gitee.com/ohnun/Algorithm.git
 - `main.cpp` 用于编写代码. 
 
 `main.cpp` 中生成的内容和 `tamplate.txt` 中一样, 
-**<font color="red">可以根据需要更改 tamplate.txt, 生成需要的 main.cpp</font>.** 
+**可以根据需要更改 tamplate.txt, 生成需要的 main.cpp.** 
 
 ## 编写代码
 
