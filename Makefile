@@ -10,6 +10,6 @@ main: main.cpp
 .PHONY: clean
 # clean main.c and delete main exe.
 clean:
-	$(CC) draft.c -o draft && ./draft
+	$(CC) draft.c -o draft && ./draft < tamplate.txt
 	rm draft main
 	clear
