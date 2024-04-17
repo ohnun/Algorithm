@@ -3,13 +3,13 @@
 
 #include <vector>
 
-// Return sorted array using selection sort. 
-std::vector<int> selectionSort(std::vector<int> arr);
+// Array is sorted by selection sort. 
+void selectionSort(std::vector<int> &arr);
 
-// Return sorted array using bubble sort. 
-std::vector<int> bubbleSort(std::vector<int> arr);
-
-// Return sorted array using insert sort. 
-std::vector<int> insertSort(std::vector<int> arr);
+// Array is sorted by bubble sort. 
+void bubbleSort(std::vector<int> &arr);
+ 
+// Array is sorted by insertion sort. 
+void insertionSort(std::vector<int> &arr);
 
 #endif

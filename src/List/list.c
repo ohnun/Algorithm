@@ -5,7 +5,7 @@
 
 /* Make a list L */
 List MakeEmpty( List L ){
-    L = malloc( sizeof( List ) );
+    L = ( List )malloc( sizeof( List ) );
     L->Next = NULL;
 
     return L;
@@ -66,7 +66,7 @@ Position FindPrevious( ElementType X, List L ){
 void Insert( ElementType X, List L, Position P ){
     Position TmpCell = NULL;
 
-    TmpCell = malloc( sizeof( struct ListNode ) );
+    TmpCell = ( List )malloc( sizeof( struct ListNode ) );
     if( TmpCell == NULL ){
         FatalError( "Out of space!!!" );
     }

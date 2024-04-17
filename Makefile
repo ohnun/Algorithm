@@ -2,7 +2,8 @@
 # CC = clang
 # CC = gcc
 CC = g++
-ADD_FILE = ./src/*.cpp
+ADD_FILE = ./src/*.cpp \
+./src/*/*.c
 
 main: main.cpp
 	$(CC) main.cpp $(ADD_FILE) -Wall -o main -g -lm
