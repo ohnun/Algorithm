@@ -15,16 +15,16 @@ git clone https://gitee.com/ohnun/Algorithm.git
 
 1. 操作系统: Linux5.15.146.1-microsoft-standard-WSL2 x86_64 GNU/Linux
 2. 编译器: gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04)
+3. Python: 3.10.6
 
 ## 项目文件
 
 - `./src/` 目录下存放一些代码模板. 
-- `./leetcode` 目录下存放重要力扣题代码, `leetCode_xxxx.cpp` 中的 `xxxx` 为题目编号. 
-- `draft.c`, `Makefile` 和 `tamplate.txt` 这三个文件是用于构建 `main.cpp` 的. 
+- `draft.py` 和 `Makefile` 这两个文件是用于构建 `main.cpp` 的. 
 - `main.cpp` 用于编写代码. 
 
-`main.cpp` 中生成的内容和 `tamplate.txt` 中一样, 
-**可以根据需要更改 tamplate.txt, 生成需要的 main.cpp.** 
+`main.cpp` 中生成的内容和 `draft.py` 的 `tamplate` 一样, 
+**可以根据需要更改 tamplate, 生成需要的 main.cpp.** 
 
 ## 编写代码
 
