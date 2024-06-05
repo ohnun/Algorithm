@@ -1,6 +1,5 @@
-# You can choose 'clang' or 'gcc'.
-# CC = clang
-# CC = gcc
+# You can choose 'clang++' or 'g++'.
+# CC = clang++
 CC = g++
 PYTHON = python3
 ADD_FILE = ./src/*.cpp \
