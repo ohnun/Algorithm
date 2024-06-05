@@ -23,7 +23,7 @@ git clone https://gitee.com/ohnun/Algorithm.git
 - `draft.py` 和 `Makefile` 这两个文件是用于构建 `main.cpp` 的. 
 - `main.cpp` 用于编写代码. 
 
-`main.cpp` 中生成的内容和 `draft.py` 的 `tamplate` 一样, 
+`main.cpp` 中生成的内容和 `draft.py` 中的 `tamplate` 一样, 
 **可以根据需要更改 tamplate, 生成需要的 main.cpp.** 
 
 ## 编写代码
