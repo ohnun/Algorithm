@@ -2,6 +2,7 @@
 # CC = clang
 # CC = gcc
 CC = g++
+PYTHON = python3
 ADD_FILE = ./src/*.cpp \
 ./src/*/*.c
 
@@ -11,6 +12,6 @@ main: main.cpp
 .PHONY: clean
 # clean main.c and delete main exe.
 clean:
-	python3 draft.py
+	$(PYTHON) draft.py
 	rm main
 	clear
