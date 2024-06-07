@@ -15,5 +15,16 @@ int main(){
 }
 """
 
+# Traditional C language tamplate. 
+c_tamplate = """\
+#include <cstdio>
+
+int main(){
+    // printf("Hello, world!\\n");
+
+    return 0;
+}
+"""
+
 with open('./main.cpp', 'w') as f:
-    f.write(tamplate)
+    f.write(c_tamplate)

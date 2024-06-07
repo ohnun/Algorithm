@@ -1,14 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <string>
-
-using std::cin;
-using std::cout;
-using std::endl;
-using std::vector;
-using std::string;
+#include <cstdio>
 
 int main(){
+    // printf("Hello, world!\n");
 
-	return 0;
+    return 0;
 }
