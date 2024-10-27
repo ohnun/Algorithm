@@ -14,8 +14,9 @@ git clone https://gitee.com/ohnun/Algorithm.git
 以下是环境版本信息: 
 
 1. 操作系统: Linux5.15.146.1-microsoft-standard-WSL2 x86_64 GNU/Linux
-2. 编译器: gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04)
-3. Python: 3.10.6
+2. 编译器: g++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0
+3. Python 3.12.3
+4. GNU Make 4.3
 
 ## 项目文件
 
