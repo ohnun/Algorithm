@@ -1,17 +1,20 @@
 # You can choose 'clang++' or 'g++'.
 # CC = clang++
 CC = g++
-PYTHON = python3
-ADD_FILE = ./src/*.cpp \
-./src/*/*.c
 
-main: main.cpp
-#	$(CC) main.cpp $(ADD_FILE) -Wall -o main -g -lm
-	$(CC) main.cpp -Wall -o main -g -lm
+SOURCE = $(wildcard ./src/*.cpp) $(wildcard ./src/*/*.c) main.cpp
+TARGET = main
+CFLAGS = -Wall -g -lm
+
+all: $(TARGET)  
+	@echo "Built $(TARGET)"
+
+$(TARGET): $(SOURCE)
+	@$(CC) $(CFLAGS) -o $@ $^
 
 .PHONY: clean
-# clean main.c and delete main exe.
+# Flash main.cpp and delete main exe.
 clean:
-	$(PYTHON) draft.py
-	rm main
-	clear
+	@echo "Cleaning up..."
+	@python3 draft.py
+	@if [ -f $(TARGET) ]; then rm $(TARGET); fi
