@@ -26,4 +26,4 @@ int main(){
 """
 
 with open('./main.cpp', 'w') as f:
-    f.write(c_tamplate)
+    f.write(tamplate)

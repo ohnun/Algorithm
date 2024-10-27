@@ -6,8 +6,8 @@ ADD_FILE = ./src/*.cpp \
 ./src/*/*.c
 
 main: main.cpp
-	$(CC) main.cpp $(ADD_FILE) -Wall -o main -g -lm
-#	$(CC) main.cpp -Wall -o main -g -lm
+#	$(CC) main.cpp $(ADD_FILE) -Wall -o main -g -lm
+	$(CC) main.cpp -Wall -o main -g -lm
 
 .PHONY: clean
 # clean main.c and delete main exe.
